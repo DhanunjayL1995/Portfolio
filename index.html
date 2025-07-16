@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhanunjaya Portfolio</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header Navigation -->
+  <header>
+    <nav>
+      <a href="#" data-section="personal-details"><i class="fas fa-user"></i> Personal</a>
+      <a href="#" data-section="educational-background"><i class="fas fa-graduation-cap"></i> Education</a>
+      <a href="#" data-section="experience"><i class="fas fa-briefcase"></i> Experience</a>
+      <a href="#" data-section="freelance-projects"><i class="fas fa-building"></i>Projects</a>
+      <a href="#" data-section="company-projects"><i class="fa-solid fa-certificate"></i>Certifications</a>
+      <a href="#" data-section="resume"><i class="fas fa-file-alt"></i> Resume</a>
+    </nav>
+  </header>
+  
+  
+
+  <!-- Content Area -->
+  <div class="content">
+    <!-- Thank You Section -->
+    <section id="thank-you" class="active">
+      <h1>Thank You for Reaching Me!</h1>
+      <p>I appreciate your interest in my portfolio. Please select a section above to learn more about my work and experiences.</p>
+    </section>
+
+    <!-- Personal Details Section -->
+    <section id="personal-details">
+      <div class="inner-container">
+        <img src="profile.jpg" alt="Profile Picture">
+        <h2>Dhanunjaya Rao Lukalapu</h2>
+        <p>Experienced Data Analytics & Automation Engineer with expertise in data engineering, automation, and front-end development. Skilled in designing interactive web applications that integrate with industrial systems, streamlining operations through automation. Proficient in Python, SQL, JavaScript, and cloud technologies to develop scalable solutions for data collection, visualization, and process optimization.</p>
+        
+        <!-- Personal Information Cards -->
+        <div class="personal-info">
+          <div class="info-card">
+            <h3>Email</h3>
+            <p>lukalapudhanunjay@gmail.com</p>
+          </div>
+          <div class="info-card">
+            <h3>Phone</h3>
+            <p>+39 3497463711</p>
+          </div>
+          <div class="info-card">
+            <h3>LinkedIn</h3>
+            <p><a href="https://linkedin.com/in/dhanunjay1999" target="_blank">www.linkedin.com/in/dhanunjay1999</a></p>
+          </div>
+          <div class="info-card">
+            <h3>Location</h3>
+            <p>Milano, Italy</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Educational Background Section -->
+    <section id="educational-background">
+      <div class="timeline-container">
+        <div class="timeline" id="edu-timeline">
+          <div class="timeline-item" data-index="0">December 2022 - December 2023</div>
+          <div class="timeline-item" data-index="1">September 2019 - December 2021</div>
+          <div class="timeline-item active" data-index="2">June 2013 - June 2017</div>
+          
+        </div>
+        <div class="slider" id="edu-slider">
+          <button class="prev" onclick="prevSlide('edu')"><i class="fas fa-chevron-left"></i></button>
+          <img src="lingayas.jpg" alt="University Image 1" id="edu-image">
+          <button class="next" onclick="nextSlide('edu')"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="description" id="edu-description">
+          <h3>Lingayas University</h3>
+          <p>Bachelor of Science in Computer Science. Focused on software development, algorithms, and data structures.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <div class="timeline-container">
+        <div class="timeline" id="exp-timeline">
+          <div class="timeline-item active" data-index="0">June 2024 - Present</div>        
+          <div class="timeline-item" data-index="1">April 2023 - April 2024</div>
+          <div class="timeline-item" data-index="2">October 2021 - March 2023</div>
+          
+        </div>
+        <div class="slider" id="exp-slider">
+          <button class="prev" onclick="prevSlide('exp')"><i class="fas fa-chevron-left"></i></button>
+          <img src="exp1.jpg" alt="Company Image 1" id="exp-image">
+          <button class="next" onclick="nextSlide('exp')"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="description" id="exp-description">
+          <h3>Alten, Dematic DIQ (Aspiag Project)</h3>
+          <p>Managed data pipeline between ASPIAG (Despar) and Dematic using Dematic IQ software and Data factory on Databricks.
+          Implemented ETL tasks with Node-Red and Data Factory.
+          Developed custom views with Oracle SQL queries, integrating Python.
+          Visualized analysis results using PowerBI and Tableau, creating insightful dashboards for stakeholders.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Freelance Projects Section -->
+    <section id="freelance-projects">
+      <div class="projects-container">
+        
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-slider">
+              <img src="first1.jpg" alt="Project Alpha Image 1" class="active">
+              <img src="first2.jpg" alt="Project Alpha Image 2">
+              <img src="first3.jpg" alt="Project Alpha Image 3">
+              <img src="first4.jpg" alt="Project Alpha Image 4">
+              <img src="first5.jpg" alt="Project Alpha Image 5">
+            </div>
+            <div class="project-info">
+              <h3>Driver Trip Planning & Optimization (freelance-project)</h3>
+              <p>
+                I created a web application to automate assigning and optimizing driver trips replacing a manual process of verifying driver availability, addresses, and travel times.
+              </p>
+              <h4>Key Features</h4>
+              <ul>
+                <li>
+                  <strong>A Real-Time Traffic Integration:</strong> Automatically calculates precise travel durations
+                </li>
+                <li>
+                  <strong>Real-Time Maps &amp; Traffic:</strong> Integrates mapping APIs and live traffic data to accurately calculate travel durations
+                </li>
+                <li>
+                  <strong>Route Optimization:</strong> Dynamically schedules trips to minimize downtime and conflicts.
+                </li>
+                <li>
+                  <strong>Feasibility Checks:</strong> Consolidates trips efficiently to minimize downtime.
+                </li>
+              </ul>
+              <p>
+                This solution drastically reduced planning time and boosted overall scheduling accuracy.
+              </p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-slider">
+              <img src="seco1.jpg" alt="E-commerce Platform Image 1" class="active">
+              <img src="seco2.jpg" alt="E-commerce Platform Image 2">
+              <img src="seco3.jpg" alt="E-commerce Platform Image 3">
+              <img src="seco4.jpg" alt="E-commerce Platform Image 4">
+              <img src="seco5.jpg" alt="E-commerce Platform Image 5">
+            </div>
+            <div class="project-info">
+              <h3>Automated Warehouse SCADA Interface</h3>
+              <p>
+                I developed a web-based application using Uwamp, MySQL, JavaScript, and CSS to create a SCADA-like system that connects seamlessly with the main automated warehouse sorter control system.
+              </p>
+              <h4>Key Features</h4>
+              <ul>
+                <li>
+                  <strong>Real-Time Data Exchange:</strong> Integrates with the sorter control system to receive and send live messages for up-to-date operational insights.
+                </li>
+                <li>
+                  <strong>Interactive Plant Visualization:</strong> Displays a detailed layout of the entire warehouse, facilitating intuitive monitoring of all devices.
+                </li>
+                <li>
+                  <strong>Remote Device Management:</strong> Allows users to start, stop, and control various devices, streamlining warehouse operations.
+                </li>
+                <li>
+                  <strong>User-Friendly Interface:</strong> Combines a robust backend with a modern, responsive frontend to ensure seamless interaction and control.
+                </li>
+              </ul>
+              <p>
+                This project enhances operational efficiency and control by bridging the gap between traditional SCADA systems and modern web-based solutions.
+              </p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-slider">
+              <img src="th1.jpg" alt="Blog Website Image 1" class="active">
+              <img src="th2.jpg" alt="Blog Website Image 2">
+              <img src="th3.jpg" alt="Blog Website Image 3">
+              <img src="th4.jpg" alt="Blog Website Image 3">
+            </div>
+            <div class="project-info">
+              <h3>Grafana Dashboards for Plant Performance Monitoring</h3>
+              <p>
+                I developed multiple dashboards using Grafana to monitor and analyze time-series data during the plant commissioning phase. These dashboards provide clear, real-time insights and help in pinpointing issues as they occur.
+              </p>
+              <h4>Key Features</h4>
+              <ul>
+                <li>
+                  <strong>Time-Series Data Visualization:</strong> Utilizes Grafana’s robust visualization capabilities to display trends, patterns, and anomalies over time.
+                </li>
+                <li>
+                  <strong>User-Friendly Interface:</strong> Features an intuitive layout that makes data exploration and monitoring accessible to all users.
+                </li>
+                <li>
+                  <strong>Real-Time Monitoring:</strong> Provides live updates to ensure immediate visibility into plant performance and quick identification of operational issues.
+                </li>
+                <li>
+                  <strong>Performance Analysis:</strong> Helps understand the occurrence of various issues during the commissioning phase, allowing for proactive problem-solving.
+                </li>
+              </ul>
+              <p>
+                This solution plays a critical role in enhancing operational insights and decision-making, ensuring optimal performance and rapid troubleshooting during key phases of plant commissioning.
+              </p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-slider">
+              <img src="ep1.jpg" alt="Blog Website Image 1" class="active">
+              <img src="ep2.jpg" alt="Blog Website Image 2">
+              <img src="ep3.jpg" alt="Blog Website Image 3">
+              <img src="ep4.jpg" alt="Blog Website Image 3">
+            </div>
+            <<div class="project-info">
+              <h3>Automated EPLAN Project Backup & Conversion Tool</h3>
+              <p>
+                This Python-based solution is designed to streamline the backup and conversion processes for EPLAN projects. By scanning project directories, it automatically identifies projects based on version patterns, distinguishing between those eligible for conversion and those that require backing up. The tool reads project metadata from XML files, uses regular expressions to filter out specific version formats, and organizes projects by revision numbers.
+              </p>
+              <h4>Key Features</h4>
+              <ul>
+                <li>
+                  <strong>Automated Folder Scanning:</strong> Traverses through directories to identify and classify EPLAN projects based on version patterns and project info.
+                </li>
+                <li>
+                  <strong>Version-Based Processing:</strong> Separates projects into conversion and backup categories, ensuring that only the latest revisions are processed for conversion while older versions are backed up.
+                </li>
+                <li>
+                  <strong>Interactive OCR & Mouse Automation:</strong> Utilizes OCR via pytesseract and mouse automation with pynput to detect on-screen prompts and simulate user interactions during the conversion process.
+                </li>
+                <li>
+                  <strong>Multi-Monitor Support:</strong> Adjusts click coordinates dynamically for multi-monitor setups, ensuring precise automation across different screen configurations.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Add more project cards as needed -->
+        </div>
+      </div>
+    </section>
+	
+    <!-- Company Projects Section -->
+    <section id="company-projects">
+      <div class="projects-container">
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-slider">
+              <img src="https://certificates.simplicdn.net/share/thumb_4167855_1676540192.png" alt="Project Alpha Certificate" class="active">
+            </div>
+            <div class="project-info">
+              <h3>PG DE- Big Data Hadoop and Spark Developer Traning</h3>
+              <p>https://certificates.simplicdn.net/share/thumb_4167855_1676540192.png</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-slider">
+              <img src="https://certificates.simplicdn.net/share/thumb_4075879.png" alt="Project Alpha Certificate" class="active">
+            </div>
+            <div class="project-info">
+              <h3>MongoDB developer and administrator</h3>
+              <p>https://certificates.simplicdn.net/share/thumb_4075879.png</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-slider">
+              <img src="certi5.jpg" alt="Project Alpha Certificate" class="active">
+            </div>
+            <div class="project-info">
+              <h3>Excel Skills for Business: Intermediate I</h3>
+              <p>https://www.coursera.org/account/accomplishments/certificate/</p>
+              <p>Q38UGDPEALK3</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-slider">
+              <img src="https://certificates.simplicdn.net/share/thumb_4035513.png" alt="Project Alpha Certificate" class="active">
+            </div>
+            <div class="project-info">
+              <h3>Big Data for Data engineering</h3>
+              <p>https://certificates.simplicdn.net/share/thumb_4035513.png</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-slider">
+              <img src="https://certificates.simplicdn.net/share/thumb_4035418.png" alt="Project Alpha Certificate" class="active">
+            </div>
+            <div class="project-info">
+              <h3>Python for Data science</h3>
+              <p>https://certificates.simplicdn.net/share/thumb_4035418.png</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-slider">
+              <img src="certi6.jpg" alt="Project Alpha Certificate" class="active">
+            </div>
+            <div class="project-info">
+              <h3>Procurement & Sourcing Introduction</h3>
+              <p>https://www.coursera.org/account/accomplishments/certificate/</p>
+              <p>Q7QLR4S4V7PY</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-slider">
+              <img src="certi7.jpg" alt="Project Alpha Certificate" class="active">
+            </div>
+            <div class="project-info">
+              <h3>R Programming</h3>
+              <p>https://www.coursera.org/account/accomplishments/certificate/</p>
+              <p>5QL7RN76NCF4</p>
+            </div>
+          </div>
+          <!-- Add more project cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <div class="inner-container">
+          <div class="resume-container">
+            <!-- Removed extra double-quote after the src attribute -->
+            <iframe src="DhanunjayaRao_CV.pdf#zoom=100" title="Resume" scrolling="yes"></iframe>
+          </div>
+        </div>
+      </section>
+  </div>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
