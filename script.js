@@ -284,5 +284,12 @@ function initProjectSliders() {
   });
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+  const iframe = document.getElementById('resume-iframe');
+  const baseURL = 'DhanunjayaRao_CV.pdf';
+  const zoomLevel = window.innerWidth < 768 ? 51 : 62;
+  iframe.src = baseURL + '#zoom=' + zoomLevel;
+});
+
 // Initialize on Page Load
 window.onload = initSliders;

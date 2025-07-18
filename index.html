@@ -16,12 +16,12 @@
   <!-- Header Navigation -->
   <header>
     <nav>
-      <a href="#" data-section="personal-details"><i class="fas fa-user"></i> Personal</a>
-      <a href="#" data-section="educational-background"><i class="fas fa-graduation-cap"></i> Education</a>
-      <a href="#" data-section="experience"><i class="fas fa-briefcase"></i> Experience</a>
-      <a href="#" data-section="freelance-projects"><i class="fas fa-building"></i>Projects</a>
-      <a href="#" data-section="company-projects"><i class="fa-solid fa-certificate"></i>Certifications</a>
-      <a href="#" data-section="resume"><i class="fas fa-file-alt"></i> Resume</a>
+      <a href="#" data-section="personal-details"><i class="fas fa-user"></i><span class="nav-label">Personal</span></a>
+      <a href="#" data-section="educational-background"><i class="fas fa-graduation-cap"></i><span class="nav-label">Education</span></a>
+      <a href="#" data-section="experience"><i class="fas fa-briefcase"></i><span class="nav-label">Experience</span></a>
+      <a href="#" data-section="freelance-projects"><i class="fas fa-building"></i><span class="nav-label">Projects</span></a>
+      <a href="#" data-section="company-projects"><i class="fa-solid fa-certificate"></i><span class="nav-label">Certifications</span></a>
+      <a href="#" data-section="resume"><i class="fas fa-file-alt"></i><span class="nav-label">Resume</span></a>
     </nav>
   </header>
   
@@ -54,7 +54,7 @@
           </div>
           <div class="info-card">
             <h3>LinkedIn</h3>
-            <p><a href="https://linkedin.com/in/dhanunjay1999" target="_blank">www.linkedin.com/in/dhanunjay1999</a></p>
+            <p><a href="https://linkedin.com/in/dhanunjay1999" target="_blank">www.linkedin.com/in/dhanunjay1995</a></p>
           </div>
           <div class="info-card">
             <h3>Location</h3>
@@ -158,7 +158,7 @@
             <div class="project-info">
               <h3>Automated Warehouse SCADA Interface</h3>
               <p>
-                I developed a web-based application using React, Vite, Nodejs, MySQL, JavaScript, and CSS to create a SCADA-like system that connects seamlessly with the main automated warehouse sorter control system.
+                I developed a web-based application using Uwamp, MySQL, JavaScript, and CSS to create a SCADA-like system that connects seamlessly with the main automated warehouse sorter control system.
               </p>
               <h4>Key Features</h4>
               <ul>
@@ -219,7 +219,7 @@
               <img src="ep3.jpg" alt="Blog Website Image 3">
               <img src="ep4.jpg" alt="Blog Website Image 3">
             </div>
-            <<div class="project-info">
+            <div class="project-info">
               <h3>Automated EPLAN Project Backup & Conversion Tool</h3>
               <p>
                 This Python-based solution is designed to streamline the backup and conversion processes for EPLAN projects. By scanning project directories, it automatically identifies projects based on version patterns, distinguishing between those eligible for conversion and those that require backing up. The tool reads project metadata from XML files, uses regular expressions to filter out specific version formats, and organizes projects by revision numbers.
@@ -320,16 +320,19 @@
         </div>
       </div>
     </section>
-
     <!-- Resume Section -->
     <section id="resume">
-        <div class="inner-container">
-          <div class="resume-container">
-            <!-- Removed extra double-quote after the src attribute -->
-            <iframe src="DhanunjayaRao_CV.pdf#zoom=100" title="Resume" scrolling="yes"></iframe>
-          </div>
+      <div class="inner-container">
+        <div class="resume-container">
+          <iframe
+            id="resume-iframe"
+            src=""           <!-- leave blank here! -->
+            title="Resume"
+            scrolling="yes"
+          ></iframe>
         </div>
-      </section>
+      </div>
+    </section>
   </div>
 
   <!-- External JavaScript -->
